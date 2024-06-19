@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos</title>
+    <link rel="stylesheet" href="f.menu.css">
+    <link rel="stylesheet" href="e.Planos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu Mobile -->
+    <header id="mobileheader">
+        <button id="mobile-btn" class="mobile-btn">☰</button>
+    </header>
+    <nav id="mobile-options" class="mobile-options">
+        <ul>
+            <li><a href="a.inicio.html">Página Inicial</a></li>
+            <li><a href="b.Planejamentotreino.html">Planejamento</a></li>
+            <li><a href="c.clientes.html">Clientes</a></li>
+            <li><a href="d.contato.html">Contato</a></li>
+            <li><a href="e.planos.html">Planos</a></li>
+        </ul>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+    <script src="f.menumobile.js"></script>
+
+    <!-- Menu Desktop -->
+    <nav class="navbar">
+        <div class="lobster-regular">
+            <h1>Treinamento Especializado</h1>
+        </div>
+        <div class="desktop-options">
+            <a href="a.inicio.html">Página ínicial</a>
+            <a href="b.Planejamentotreino.html">Planejamento</a>
+            <a href="c.clientes.html">Clientes</a>
+            <a href="d.contato.html">Contato</a>
+            <a href="e.planos.html">Planos</a>
+        </div>
+    </nav>
+    <!-- Cabeçalho principal -->
+    <header>
+        <h2 id="textochave"> Quer adquirir seu Planejamento ? confira os planos: </h2>
+        <h2 id="desconto"> *Descontos Válidos APENAS para os Primeiros 10 Clientes* </h2>
+        
+        <!-- Opções de planos -->
+        <div class="serviços">
+            <div class="card">
+                <h3>Plano Básico</h3>
+                <img src="meutreino.png">
+                <h2><strong>De R$15</strong> Por R$9,90:</h2>
+                <p class="have">Ficha de treino personalizada ✔</p>
+                    <p class="nohave">Periodização de Treino<br>
+                    Avaliação Física</p>
+                    <a href="https://api.whatsapp.com/send?phone=5535999928473&text=Ol%C3%A1,%20Quero%20adquirir%20o%20Plano%20B%C3%A1sico%20do%20seu%20programa%20de%20treinamento." class="contact-btn" style="margin-top: 40px;">Assinar Agora</a>
+            </div>
+
+            <div class="card">
+                <h3>Plano Avançado</h3>
+                <img src="img.planoavançado.png">
+                <h2><strong>De R$25</strong> Por R$19,90:</h2>
+                <p class="have">Ficha de treino personalizada ✔ <br>
+                                Periodização de Treino ✔ <br>
+                                Avaliação Física ✔ </p>
+                <a href="https://api.whatsapp.com/send?phone=5535999928473&text=Ol%C3%A1,%20Quero%20adquirir%20o%20Plano%20Avan%C3%A7ado%20do%20seu%20programa%20de%20treinamento." class="contact-btn" style="margin-top: 55px;">Assinar Agora</a>
+            </div>
+
+            <div class="card">
+                <h3><span class="premium">Plano Premium</span></h3>
+                <img src="img.planopremium.jpg">
+                <h2><strong>De R$65</strong> Por R$49,90:</h2>
+                <p class="have">Ficha de treino personalizada ✔ <br>
+                    Periodização de Treino ✔ <br>
+                    Avaliação Física ✔ </p>
+                <p id="dieta">Planejamento e acompanhamento de Dieta ✔</p>
+                <a href="https://api.whatsapp.com/send?phone=5535999928473&text=Ol%C3%A1,%20Quero%20adquirir%20o%20Plano%20Premium%20do%20seu%20programa%20de%20treinamento." class="contact-btn">Assinar Agora</a>
+            </div>
+        </div>
+    </header>
+    <!-- Rodapé -->
+    <footer>
+        <div style="color: white;">
+            <h1 style="font-family: Lobster, sans-serif;">Programa de Treinamento</h1>
+            <p style="color:white">Treinos Individuais e Personalizados</p>
+        </div>
+        <b style="color:white;">© Todos os direitos reservados.</b>
+    </footer>
+</body>
+</html>

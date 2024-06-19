@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: black;
+}
+/* Cabeçalho */
+.header{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top:100px;
+}
+.headline{
+    margin-left:10%;
+    flex:40%;
+    /* border:1px solid black; */
+}
+#textochave{
+    font-size:80px;
+}
+.imgheadline{
+    flex: 40%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: left;
+    margin: 20px 0; 
+    margin-left: 40px;
+}
+.imgheadline img {
+    height: 450px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 20px 20px 50px rgb(158, 125, 35); 
+}
+.headline h2{
+    font-weight: 900;
+    font-size:20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.headline p{
+    color:white;
+    text-align:left;
+}
+.contact-btn{
+    display: inline-block;
+    background: #660808;
+    padding:20px;
+    color:white;
+    text-transform: uppercase;
+    border-radius:5px;
+    text-decoration: none;
+    border: 2px solid red;
+}
+.contact-btn:hover{
+    background:blue;
+    box-shadow: 10px 10px 30px #660808;
+}
+/* Seções */
+section{
+    margin-top: 120px;
+    margin-left: 45px;
+    display: flex;
+}
+#section{
+    margin-left: 80px; margin-right: 80px; margin-top: 170px;
+}
+/* Textos */
+.introducao{
+    font-size: 30px;
+    color: white;
+}
+.it{
+    font-size: 150%;
+    color: white;
+    margin-right: 75px;
+    margin-left: 80px;
+}
+.subtitulos{
+    color: white;
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+    margin-top: 80px; margin-left: 80px;
+}
+.h2{
+    font-size: 200%;
+    color: white;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+/* Blocos Fichas do Treino */
+.Blockline{
+    flex: 50%;
+}
+
+.imgblockline{
+    flex: 50%;
+    display: flex;
+}
+/* rodapé */
+footer{
+    margin-top:150px;
+    height: 200px;
+    background-image:linear-gradient(180deg,#660808,#3a0808,black);
+    text-align:center;
+    border-top:5px solid rgb(158, 125, 35);
+}
+@media screen and (max-width:660px){
+    /* Cabeçalho */
+    .header{
+        padding: 0;
+    }
+    .headline{
+        margin: 5%;
+        margin-bottom: 0;
+        flex: 45%;
+    }
+    .imgheadline{
+        flex: 45%;
+        margin: 5%;
+    }
+    .imgheadline img{
+        width: 100%;
+        height: 100%;
+    }
+    /* textos */
+    .subtitulos{
+        margin: 5%;
+    }
+    .it{
+        margin: 5%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    .introducao{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    /* Seções */
+    #section{
+        margin: 0;
+    }
+    section{
+        margin: 0;
+        margin-top: 50px;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgblockline{
+        flex: 100%;
+        width: 100%;
+    }
+    .imgblockline img{
+        width: 100%;
+        height: auto;
+    }
+    .Blockline{
+        margin-top: 50px;
+    }
+}

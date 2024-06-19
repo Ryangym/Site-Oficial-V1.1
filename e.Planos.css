@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: black;
+    width: 100%;
+}
+#textochave{
+    font-size: 300%; 
+    margin-top: 50px;
+    color: white;
+    margin-left: 80px;
+}
+/* Cabeçalho */
+header{
+    margin-left: 40px;    
+}
+#desconto{
+    font-size: 25px;
+    color: white;
+}
+.serviços{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    height: 910px;
+    padding-bottom: 10px;
+    margin:1%;
+    border:1px solid #ff2929;
+    border-radius:10px;
+    flex-flow: row wrap;
+    vertical-align: middle;
+}
+.card img{
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    
+}
+/* Textos */
+.headline h2{
+    font-weight: 900;
+    font-size:20px;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.h2{
+    font-size: 200%;
+    color: white;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+.card h3{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: #660808;
+    font-size: 25px;
+}
+.card h2{
+    font-size: 30px; color: white; text-align: center;
+}
+strong{
+    color: #dd3c3c;
+    font-size: 23px;
+    text-decoration: line-through;
+}
+/* Ofertada pelo plano */
+.have{
+    color:white;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    padding: 0;
+    text-shadow: 2px 2px 5px #ffd700;
+}
+/* Coisas não ofertadas pelo plano */
+.nohave{
+    font-size: 18px;
+    color: red;
+    text-decoration: line-through;
+    margin-left: 40px;
+    margin-top: 5px;
+    padding: 0;
+}
+/* Texto premium */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #daa520, 0 0 6px #daa520, 0 0 8px #daa520, 0 0 10px #daa520;
+    }
+    50% {
+        text-shadow: 0 0 4px #fff, 0 0 8px #daa520, 0 0 12px #daa520, 0 0 16px #daa520, 0 0 20px #daa520;
+    }
+    100% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #daa520, 0 0 6px #daa520, 0 0 8px #daa520, 0 0 10px #daa520;
+    }
+}
+@keyframes wine-glow {
+    0% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #800000, 0 0 6px #800000, 0 0 8px #800000, 0 0 10px #800000;
+    }
+    50% {
+        text-shadow: 0 0 4px #fff, 0 0 8px #800000, 0 0 12px #800000, 0 0 16px #800000, 0 0 20px #800000;
+    }
+    100% {
+        text-shadow: 0 0 2px #fff, 0 0 4px #800000, 0 0 6px #800000, 0 0 8px #800000, 0 0 10px #800000;
+    }
+}
+.premium {
+    font-weight: bold;
+    color: white; 
+    animation: glow 1.5s infinite alternate;
+}
+/* Texto dieta */
+#dieta{
+    font-weight: bold;
+    color: white; 
+    animation: wine-glow 1.5s infinite alternate;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    padding: 0;
+    margin-top: 5px;
+}
+/* Botão de acesso */
+.contact-btn{
+    display: inline-flex;
+    background: #660808;
+    padding:20px;
+    color:white;
+    text-transform: uppercase;
+    border-radius:5px;
+    text-decoration: none;
+    border: 2px solid red;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.contact-btn:hover{
+    background:rgb(158, 125, 35);
+    box-shadow: 10px 10px 30px #660808;
+}
+/* rodapé */
+footer{
+    margin-top:150px;
+    height: 200px;
+    background-image:linear-gradient(180deg,#660808,#3a0808,black);
+    text-align:center;
+    border-top:5px solid rgb(158, 125, 35);
+}
+@media screen and (max-width:660px){
+    #textochave{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        margin-left: 5%;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    /* cabeçalho */
+    header{
+        margin: 2%;
+    }
+    .serviços{
+        display: flex;
+        flex-direction: column; 
+    }
+    .card{
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+        height: auto; 
+    }
+    .card h3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .have{
+        margin-left: 8%;
+    }
+    .nohave{
+        margin-left: 8%;
+    }
+    #dieta{
+        margin-left: 8%; 
+    }
+    .contact-btn{
+        margin-left: 25%;
+    }
+    footer{
+        margin-top:50px;
+    }
+}
+
+
