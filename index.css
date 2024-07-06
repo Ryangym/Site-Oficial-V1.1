@@ -237,6 +237,7 @@ footer{
     }
     /* Minha história */
     #historia{
+        display: none;
         margin-top: 0;
     }
     #historia p{
