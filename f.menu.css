@@ -99,12 +99,47 @@
     height: 0;
     width: 0;
 }
+@media screen and (max-width:1470px){
+    .desktop-options{
+        flex: 85%;
+        margin: 0;
+        justify-content: right;
+    }
+    .lobster-regular{
+        flex: 10%;
+        margin: 0;
+        font-size: 15px;
+        margin-left: 5%;
+    }
+    #contato-box{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1195px){
+    .lobster-regular{
+        margin: 0;
+        width: 50%;
+        margin-left: 5%;
+    }
+    .desktop-options{
+        padding: 0;
+        width: 40%;
+    }
+    .desktop-options a{
+        padding: 14px 14px;
+        width: 20%;
+    }
+    #contato-box{
+        margin: 0;
+        margin-right: 5%;
+    }
+}
 @media screen and (max-width:768px){
     .desktop-options{
         display: none;
     }
 }
-@media screen and (max-width:660px){
+@media screen and (max-width:768px){
     /* titulo */
     .lobster-regular{
         margin-left: 5%;
