@@ -37,7 +37,8 @@
     margin-left: 10%;
     font-size: 20px;
     color: white;
-    text-shadow: 4px 4px 10px rgb(255, 0, 0)
+    text-shadow: 4px 4px 10px rgb(255, 0, 0);
+    text-decoration: none;
 }
 /* Menu Desktop */
 .desktop-options{
@@ -83,19 +84,16 @@
     height: 60px;
     width: 150px;
     border: 2px solid red;
-}
-#contato{
     padding: 0;
-    margin: 0;
 }
-#contato:hover{
-    color: #ffffff;
-    border: none;
+
+#contato-box:hover{
+    color: #ffffff
 }
 #contato-box:hover{
     background:rgb(158, 125, 35);
 }
-#contato:hover::after {
+#contato-box:hover::after {
     height: 0;
     width: 0;
 }
