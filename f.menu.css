@@ -97,23 +97,28 @@
     height: 0;
     width: 0;
 }
+@media screen and (max-width:1570px) {
+    .lobster-regular{
+        margin-left: 50px;
+    }
+}
 @media screen and (max-width:1470px){
     .desktop-options{
-        flex: 85%;
+        width: 85%;
         margin: 0;
         justify-content: right;
     }
     .lobster-regular{
-        flex: 10%;
+        width: 10%;
         margin: 0;
-        font-size: 15px;
+        font-size: 20px;
         margin-left: 5%;
     }
     #contato-box{
         margin-left: 0;
     }
 }
-@media screen and (max-width:1195px){
+@media screen and (max-width:1374px){
     .lobster-regular{
         margin: 0;
         width: 50%;
@@ -130,6 +135,39 @@
     #contato-box{
         margin: 0;
         margin-right: 5%;
+    }
+}
+@media screen and (max-width:1200px) {
+    .lobster-regular{
+        flex: 25%;
+        margin-left: 10%;
+        font-size: 18px;
+    }
+    .desktop-options{
+        flex: 65%;
+        margin: 0;
+    }
+    .desktop-options a{
+        padding: 14px 14px;
+        width: 25%;
+    }
+}
+@media screen and (max-width:1075px){
+    #paginicial{
+        display: none;
+    }
+    .lobster-regular{
+        flex: 35%;
+        margin-left: 10%;
+        font-size: 15px;
+    }
+    .desktop-options{
+        flex: 55%;
+        margin: 0;
+    }
+    .desktop-options a{
+        padding: 14px 14px;
+        width: 25%;
     }
 }
 @media screen and (max-width:768px){
