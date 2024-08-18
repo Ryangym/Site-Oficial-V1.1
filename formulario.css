@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /*Adicionado para garantir que padding e bordas não afetem o tamanho total dos elementos */
+}
+
+body {
+    background-image: linear-gradient(rgb(201, 24, 24), #660808, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Adicionado para garantir que não haja margens no body */
+}
+
+.container {
+    display: block;
+    padding: 40px;
+    width: 100%; /* Definido para 100% para que o contêiner se ajuste à largura máxima definida */
+    max-width: 500px; /* Limitado para um máximo de 500px */
+    border: solid 2px white;
+    border-radius: 4px;
+    background-color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ff0000;
+    border-radius: 4px;
+    font-size: 16px; /* Certifique-se de que a fonte é a mesma */
+    box-sizing: border-box; /* Para garantir que padding não afete a largura total */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #660808;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: red;
+}
+p {
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 20px;
+}
