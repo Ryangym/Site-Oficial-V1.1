@@ -7,32 +7,37 @@ body{
     width: 100%;
 }
 #textochave{
-    font-size: 300%; 
-    margin-top: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem; 
+    margin-top: 2.5rem;
     color: white;
-    margin-left: 80px;
+    margin-left: 4rem;
 }
 /* Cabeçalho */
 header{
-    margin-left: 40px;    
+    display: flex;
+    flex-direction: column;
 }
+
 #desconto{
     font-size: 25px;
     color: white;
 }
 .serviços{
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 .card{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 30%;
-    height: 910px;
+    height: 60rem;
     padding-bottom: 10px;
     margin:1%;
     border:1px solid #ff2929;
     border-radius:10px;
-    flex-flow: row wrap;
     vertical-align: middle;
 }
 .card img{
@@ -71,23 +76,25 @@ strong{
     font-size: 23px;
     text-decoration: line-through;
 }
+.textbeneficios{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    font-size: 1.5rem;
+    /* border: green solid 2px; */
+    height: 10rem;
+}
 /* Ofertada pelo plano */
 .have{
     color:white;
-    font-size: 20px;
-    margin-left: 40px;
-    margin-bottom: 0px;
-    padding: 0;
     text-shadow: 2px 2px 5px #ffd700;
+    margin: 0;
 }
 /* Coisas não ofertadas pelo plano */
 .nohave{
-    font-size: 18px;
     color: red;
+    margin: 0;
     text-decoration: line-through;
-    margin-left: 40px;
-    margin-top: 5px;
-    padding: 0;
 }
 /* Texto premium */
 @keyframes glow {
@@ -122,24 +129,22 @@ strong{
     font-weight: bold;
     color: white; 
     animation: wine-glow 1.5s infinite alternate;
-    font-size: 20px;
-    margin-left: 40px;
-    margin-bottom: 0px;
-    padding: 0;
-    margin-top: 5px;
+    margin: 0;
 }
 /* Botão de acesso */
 .contact-btn{
-    display: inline-flex;
+    text-align: center;
     background: #660808;
-    padding:20px;
+    padding: 20px 2px 20px 2px;
     color:white;
     text-transform: uppercase;
     border-radius:5px;
     text-decoration: none;
     border: 2px solid red;
-    margin-left: 200px;
-    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: auto;
+    margin-bottom: 15px;
 }
 .contact-btn:hover{
     background:rgb(158, 125, 35);
@@ -155,7 +160,6 @@ footer{
 }
 @media screen and (max-width:768px){
     #textochave{
-        font-family: Georgia, 'Times New Roman', Times, serif;
         margin: 0;
         margin-left: 5%;
         margin-top: 30px;
@@ -170,11 +174,10 @@ footer{
         flex-direction: column; 
     }
     .card{
-        display: block;
         width: 100%;
         margin: 0;
         margin-top: 30px;
-        height: auto; 
+        height: auto;
     }
     .card h3{
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -188,8 +191,11 @@ footer{
     #dieta{
         margin-left: 8%; 
     }
+    .textbeneficios{
+        
+    }
     .contact-btn{
-        margin-left: 25%;
+        margin-top: auto;
     }
     footer{
         margin-top:50px;
